@@ -1,6 +1,3 @@
-var caproles = ["Red", "Blue", "Orange", "Green", "Black", "Purple", "Pink", "Yellow",
-	"HotPink", "Indigo", "Bronze", "Cyan", "LightGreen", "Silver", "BrightRed", "HotBrown",
-	"DarkViolet", "Gold"];
 var allroles = ["red", "blue", "orange", "green", "black", "purple", "pink", "yellow",
 	"hotpink", "indigo", "bronze", "cyan", "lightgreen", "silver", "brightred", "hotbrown",
 	"darkviolet", "gold"];
@@ -10,7 +7,7 @@ var pluscolors = ["pink", "indigo", "bronze", "hotpink", "cyan", "lightgreen"];
 var freecolors = ["red", "blue", "orange", "green", "black", "purple", "yellow", "white"];
 
 function removeColorRoles(roles, user) {
-	caproles.forEach((color) => {
+	allroles.forEach((color) => {
 		if (user.roles.find("name", color)) {
 			user.removeRole(roles.find("name", color));
 		}
